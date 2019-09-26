@@ -1,7 +1,12 @@
 # Your Code Here
 
 def my_own_map(array)
-  yield(array)
+  i = 0 
+  result_array = []
+  while i<array.length
+    yield(array)
+  end
+  
 end
 
 my_own_map(array) {|num| num*-1}
