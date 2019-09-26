@@ -10,7 +10,4 @@ def my_own_map(array)
   return result_array
 end
 
-my_own_map(array) {|num| num*-1}
-my_own_map(array) {|num| num}
-my_own_map(array) {|num| num*2}
-my_own_map(array) {|num| num**2}
+
