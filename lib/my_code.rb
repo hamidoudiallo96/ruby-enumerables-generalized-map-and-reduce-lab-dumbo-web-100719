@@ -9,10 +9,13 @@ def map(array)
 end
 
 def reduce(array, starting_point)
-  total = starting_point
   array.each do |item|
-    total+= yield(item)
+    total = yield(item,starting_point)
+    if item == "nil"
+      return false
+    end
   end
+  
   return total
 end
 
