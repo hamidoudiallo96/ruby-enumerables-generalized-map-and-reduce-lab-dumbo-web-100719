@@ -1,13 +1,13 @@
 # Your Code Here
 
 def map(array)
-  i = 0 
   result_array = []
-  while i<array.length
-    result_array.push(yield(array[i]))
-    i+=1
+  array.each do |item|
+    result_array << yield(item)
   end
   return result_array
 end
+
+
 
 
