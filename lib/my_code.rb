@@ -10,10 +10,10 @@ end
 
 def reduce(array, starting_point)
   array.each do |item|
-    if item == "nil"
-      return false
-    end
     total = yield(item,starting_point)
+  end
+  if total == "nil"
+      return false
   end
   return total
 end
