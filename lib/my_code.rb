@@ -7,6 +7,7 @@ def my_own_map(array)
     result_array << yield(array[i])
     i+=1
   end
+  return result_array
 end
 
 my_own_map(array) {|num| num*-1}
