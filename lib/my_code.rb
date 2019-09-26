@@ -8,6 +8,12 @@ def map(array)
   return result_array
 end
 
-
+def reduce(array)
+  total = 0
+  array.each do |item|
+    total+= yield(item)
+  end
+  return total
+end
 
 
