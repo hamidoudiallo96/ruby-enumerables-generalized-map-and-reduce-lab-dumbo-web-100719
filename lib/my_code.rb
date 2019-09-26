@@ -8,7 +8,7 @@ def map(array)
   return result_array
 end
 
-def reduce(array)
+def reduce(array, starting_point)
   total = 0
   array.each do |item|
     total+= yield(item)
